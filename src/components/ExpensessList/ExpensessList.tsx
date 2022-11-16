@@ -1,5 +1,5 @@
-import React from 'react'
-import { Badge } from '../Badge/badge'
+
+import { Badge } from '../Badge/Badge'
 import { ExpensListItem } from '../ExpensListItem/ExpensListItem'
 
 export const ExpensessList = () => {
