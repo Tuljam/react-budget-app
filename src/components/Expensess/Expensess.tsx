@@ -10,7 +10,7 @@ export const Expensess = () => {
        <Title/>
        <Input/>
        <ExpensessList/>
-
+        
      </div>
   )
 }

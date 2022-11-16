@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppWrapper } from './AppWrapperStyles'
 import { AddExpensess } from './components/AddExpensess/AddExpensess'
-import { BadgetApp } from './components/Budget/BadgetApp'
+import { BudgetApp } from './components/Budget/BudgetApp'
 import { Expensess } from './components/Expensess/Expensess'
 
 
@@ -9,7 +9,7 @@ import { Expensess } from './components/Expensess/Expensess'
 export const App = () => {
   return (
     <AppWrapper>
-    <BadgetApp/>
+    <BudgetApp/>
     <Expensess/>
    <AddExpensess/>
     </AppWrapper>
