@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Title = () => {
   return (
-    <div>Title</div>
+    <h2>Title</h2>
   )
 }
