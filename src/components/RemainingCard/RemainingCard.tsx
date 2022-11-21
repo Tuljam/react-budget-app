@@ -1,7 +1,8 @@
 import React from 'react'
+import { RemainingCardStyled } from './styles'
 
 export const RemainingCard = () => {
   return (
-    <div>RemainingCard</div>
+    <RemainingCardStyled>Remaining:</RemainingCardStyled>
   )
 }

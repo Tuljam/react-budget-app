@@ -8,13 +8,8 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  
-  <ExpensesContextProvider> 
-  <GlobalStyles/>
-  <App />
+  <ExpensesContextProvider>
+    <GlobalStyles />
+    <App />
   </ExpensesContextProvider>
- 
-  
- 
-
 );

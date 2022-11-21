@@ -1,13 +1,18 @@
 import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
+import { Badge } from "../Badge/Badge";
+interface IProps {
+  title:string;
+  price:number;
+}
 
 
-
-export const ExpenseListItem = () => {
+export const ExpenseListItem = ({title, price}:IProps) => {
 
 
  return (
-            <li>
-              
+            <li >
+              {title}= {price}
+              <Badge/>
             </li>
           );
 }

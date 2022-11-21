@@ -3,20 +3,18 @@ import { BudgetCard } from '../BudgetCard/BudgetCard'
 import { CurrensySelect } from '../CurrensySelect/CurrensySelect'
 import { RemainingCard } from '../RemainingCard/RemainingCard'
 import { Spentcard } from '../SpentCard/Spentcard'
-
 import { Title } from '../Title/Title'
+import { BudgetStyled } from './styles'
 
-
-
-export const BudgetApp = () => {
+export const Budget = () => {
   return (
-    <div>
-      <Title/>
-      <CurrensySelect/>
-      <BudgetCard/>
-      <RemainingCard/>
-      <Spentcard/>
-
-    </div>
+    <BudgetStyled>
+        <CurrensySelect />
+        <Title label = "Budget App:"/> 
+        <BudgetCard/>
+        <RemainingCard />
+        <Spentcard />
+    </BudgetStyled>
+        
   )
 }

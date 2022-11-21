@@ -11,7 +11,7 @@ export const useExpensesContextValue = () => {
             {
         id: "23abc",
         title: "Lopata",
-        cost:100,    
+        price:100,    
     },
 ],
 setNewExpense: (newExpense)=> {

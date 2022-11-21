@@ -1,15 +1,11 @@
-import React from 'react'
-import { useExpensesContext } from '../../context/ExpenseListContext/ExpenseListContext';
+import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
 
 export const Submit = () => {
- const {setNewExpense} = useExpensesContext();
+  const { setNewExpense } = useExpensesContext();
 
-    const handleSubmit= () => {
-    setNewExpense ({id:"32bsd", title:"Shapka", cost: 80})
-    }
+  const handleSubmit = () => {
+    setNewExpense( { id: "32mfd", title: "Sharf", price: 20 });
+  };
 
-  return (
-     <button onClick={handleSubmit}> Done</button>
-  
-  )
-}
+  return <button onClick={handleSubmit}> Done</button>;
+};

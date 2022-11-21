@@ -1,10 +1,17 @@
 import styled from "styled-components";
+export const BudgetStyled = styled.form`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-export const StyledBadgetApp = styled.div`
+    width: 100%;
+
+
+    background: #999;
+    border: 2px solid #333;
+
+ 
+
+
 `
-// export const Title = styled.h2`
-// text-align: center;
-// font-style: normal;
-// font-weight: 700;
-// font-size: 24px;
-// `

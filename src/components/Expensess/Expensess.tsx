@@ -1,16 +1,15 @@
 import React from 'react'
 import { ExpenseList } from '../ExpenseList/ExpenseList'
 
-import { Input } from '../Input/Input'
+import { ExpensesSearch} from '../ExpensesSearch/ExpensesSearch'
 import { Title } from '../Title/Title'
 
 
 export const Expensess = () => {
   return (
     <div>
-       <Title/>
-       <Input/>
-       <Input/>
+       <Title label='Expenses'/>
+       <ExpensesSearch/>
        <ExpenseList/>
    
         

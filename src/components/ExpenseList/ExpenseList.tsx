@@ -1,27 +1,14 @@
-import { useContext } from "react";
-import {
-  ExpensesContext,
-  useExpensesContext,
-} from "../../context/ExpenseListContext/ExpenseListContext";
-import { Badge } from "../Badge/Badge";
+import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
+import { ExpenseListItem } from "../ExpenseListItem/ExpenseListItem";
 
 export const ExpenseList = () => {
-  const { expenses, setNewExpense, deleteExpense } = useExpensesContext();
-
-  const handleSubmit = () => {
-    setNewExpense({ id: "32bsd", title: "Shapka", cost: 80 });
-  };
+  const { expenses } = useExpensesContext();
 
   return (
     <div>
-      {/* <button onClick={handleSubmit}> Addddd</button> */}
       <ul>
-        {expenses.map(({ id, title, cost }) => {
-          return (
-            <li key={id} onClick={() => deleteExpense(id)}>
-              {title} = {cost}
-            </li>
-          );
+        {expenses.map(({ id, title, price }) => {
+          return <ExpenseListItem key={id} title={title} price={price} />;
         })}
       </ul>
     </div>
