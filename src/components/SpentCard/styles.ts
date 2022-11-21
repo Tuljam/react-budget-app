@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const BudgetCardStyled = styled.form`
+export const SpentcardStyled = styled.form`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,14 +13,7 @@ export const BudgetCardStyled = styled.form`
   font-size: 20px;
   line-height: 24px;
 
-  background: #6495ed;
+  background: #e1bff2;
   border: none;
   border-radius: 10px;
-
-  .budget__button {
-    width: 85px;
-    height: 36px;
-    border-radius: 15px;
-    border: none;
-  }
 `;

@@ -1,7 +1,5 @@
-import React from 'react'
+import { SpentcardStyled } from "./styles";
 
 export const Spentcard = () => {
-  return (
-    <div>Spentcard</div>
-  )
-}
+  return <SpentcardStyled>Spent:</SpentcardStyled>;
+};

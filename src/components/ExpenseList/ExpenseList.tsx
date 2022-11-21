@@ -4,6 +4,7 @@ import { ExpenseListItem } from "../ExpenseListItem/ExpenseListItem";
 export const ExpenseList = () => {
   const { expenses } = useExpensesContext();
 
+
   return (
     <div>
       <ul>

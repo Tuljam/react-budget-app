@@ -1,6 +1,6 @@
 export enum Curency {
-    USD = '$',
-    EURO = '€',
-    GBR = '£',
-    BYR = 'BY'
+  USD = "$",
+  EURO = "€",
+  GBR = "£",
+  BYR = "BY",
 }

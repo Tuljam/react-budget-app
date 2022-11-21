@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BudgetCardStyled } from "./styles";
 
 export const BudgetCard = () => {
+ 
   const [isEditMode, setIsEditMode] = useState(false);
 
   const handleEdit = () => {
@@ -23,7 +24,7 @@ export const BudgetCard = () => {
         </>
       ) : (
         <>
-          <p className="budget__descr"> Budget: 3500</p>
+          <p className="budget__descr"> Budget:{}</p>
           <button className="budget__button" onClick={handleEdit}>
             {" "}
             Edit

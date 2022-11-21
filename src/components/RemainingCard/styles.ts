@@ -16,5 +16,4 @@ export const RemainingCardStyled = styled.form`
   background: #b4c3de;
   border: none;
   border-radius: 10px;
-
 `;
