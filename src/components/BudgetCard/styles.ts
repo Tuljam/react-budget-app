@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const BudgetCardStyled = styled.form`
+export const BudgetCardStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,4 +23,10 @@ export const BudgetCardStyled = styled.form`
     border-radius: 15px;
     border: none;
   }
+`;
+export const SubTitleStyled = styled.p`
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 `;

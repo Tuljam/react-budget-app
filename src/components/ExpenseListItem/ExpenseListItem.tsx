@@ -1,14 +1,18 @@
+import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
 import { Badge } from "../Badge/Badge";
-interface IProps {
-  title: string;
-  price: number;
-}
 
-export const ExpenseListItem = ({ title, price }: IProps) => {
+export const ExpensesListItem = () => {
+  const { expenses } = useExpensesContext();
   return (
-    <li>
-      {title} {price}
+    <div>
+      {expenses.map(({ id, title, price }) => {
+        return (
+          <li key={id}>
+            {title} = {price}
+          </li>
+        );
+      })}
       <Badge />
-    </li>
+    </div>
   );
 };

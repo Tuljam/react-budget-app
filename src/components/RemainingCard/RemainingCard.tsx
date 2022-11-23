@@ -1,5 +1,8 @@
+import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
 import { RemainingCardStyled } from "./styles";
 
 export const RemainingCard = () => {
-  return <RemainingCardStyled>Remaining:</RemainingCardStyled>;
+  const { remaining } = useBudgetContext();
+
+  return <RemainingCardStyled>Remaining:{remaining}</RemainingCardStyled>;
 };
