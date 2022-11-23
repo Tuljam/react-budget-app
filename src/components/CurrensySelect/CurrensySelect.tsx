@@ -1,18 +1,20 @@
-import Select from "react-select";
-import { Currency } from "../../ui/currency";
-
-type CurrencyOption = {
-  value: Currency;
-  label: keyof typeof Currency; //либо string
-};
+import Select, { SingleValue } from "react-select";
+import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
 
 export const CurrensySelect = () => {
-  const options: CurrencyOption[] = [
-    { value: Currency.USD, label: "USD" },
-    { value: Currency.EUR, label: "EUR" },
-    { value: Currency.GBR, label: "GBR" },
-    { value: Currency.BYR, label: "BYR" },
-  ];
+  const { setNewCurrency, currencies, currentCurrency } = useCurrencyContext();
+  const handleSelect = (option: SingleValue<typeof currentCurrency>) => {
+    if (option) {
+      setNewCurrency(option);
+    }
+  };
 
-  return <Select options={options} />;
+  return (
+    <Select
+      options={currencies}
+      value={currentCurrency}
+      onChange={handleSelect}
+      isSearchable={false}
+    />
+  );
 };

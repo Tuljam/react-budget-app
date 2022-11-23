@@ -1,7 +1,10 @@
+import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
+
 export const Badge = () => {
+  const { currentCurrency } = useCurrencyContext();
   return (
     <div>
-      <p>Badge</p>
+      <p>{currentCurrency.value}</p>
     </div>
   );
 };

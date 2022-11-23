@@ -1,5 +1,8 @@
+import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
 import { SpentcardStyled } from "./styles";
 
 export const Spentcard = () => {
-  return <SpentcardStyled>Spent:</SpentcardStyled>;
+  const { currentCurrency } = useCurrencyContext();
+
+  return <SpentcardStyled>Spent {currentCurrency.value}:</SpentcardStyled>;
 };
