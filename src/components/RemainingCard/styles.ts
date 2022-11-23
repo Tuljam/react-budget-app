@@ -1,5 +1,9 @@
 import styled from "styled-components";
-export const RemainingCardStyled = styled.form`
+
+interface IProps {
+  danger?: boolean;
+}
+export const RemainingCardStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +17,9 @@ export const RemainingCardStyled = styled.form`
   font-size: 20px;
   line-height: 24px;
 
+  background-color: ${(props: IProps) =>
+    props.danger ? "#FF0E27" : "#9E2DFC"};
+  color: ${(props: IProps) => (props.danger ? "#FFF" : "black")};
   background: #b4c3de;
   border: none;
   border-radius: 10px;

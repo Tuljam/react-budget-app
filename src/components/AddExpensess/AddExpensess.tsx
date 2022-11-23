@@ -2,6 +2,7 @@ import { FormEvent } from "react";
 import { Input } from "../Input/Input";
 import { Submit } from "../Submit/Submit";
 import { Title } from "../Title/Title";
+import { StyledForm } from "./styles";
 
 export const AddExpensess = () => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -9,11 +10,11 @@ export const AddExpensess = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <StyledForm onSubmit={handleSubmit}>
       <Title label="Add Expenses" />
       <Input />
       <Input />
       <Submit />
-    </form>
+    </StyledForm>
   );
 };
