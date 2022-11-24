@@ -20,7 +20,7 @@ export const RemainingCardStyled = styled.div`
   background-color: ${(props: IProps) =>
     props.danger ? "#FF0E27" : "#9E2DFC"};
   color: ${(props: IProps) => (props.danger ? "#FFF" : "black")};
-  background: #b4c3de;
+  /* background: #b4c3de; */
   border: none;
   border-radius: 10px;
 `;
