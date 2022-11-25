@@ -2,9 +2,9 @@ import styled from "styled-components";
 export const BudgetStyled = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
 
   width: 100%;
 

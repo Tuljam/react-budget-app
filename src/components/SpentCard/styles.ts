@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const SpentcardStyled = styled.form`
+export const SpentcardStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
