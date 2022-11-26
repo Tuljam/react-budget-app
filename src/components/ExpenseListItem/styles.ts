@@ -23,9 +23,9 @@ export const BadgeStyled = styled.span`
 
 export const ExpensesDeleteButtonStyled = styled.button`
   justify-self: center;
-  width: 5px;
+  width: 15px;
   margin-left: 5px;
-
+  font-size: 12px;
   color: red;
   cursor: pointer;
 `;
