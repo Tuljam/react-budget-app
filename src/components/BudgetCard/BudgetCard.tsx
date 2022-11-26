@@ -1,8 +1,8 @@
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
 import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
 import { useInput } from "../../hooks/useInput";
-import { BudgetCardStyled, SubTitleStyled } from "./styles";
+import { BudgetCardStyled, InputStyled, SubTitleStyled } from "./styles";
 
 export const BudgetCard = () => {
   const inputValue = useInput();
@@ -23,7 +23,7 @@ export const BudgetCard = () => {
     <BudgetCardStyled>
       {isEditMode ? (
         <>
-          <input type="text" className="form-control" {...inputValue} />
+          <InputStyled type="text" {...inputValue} />
           <button className="budget__button" onClick={handleSave}>
             {" "}
             Save

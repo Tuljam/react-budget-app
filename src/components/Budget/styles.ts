@@ -7,9 +7,6 @@ export const BudgetStyled = styled.div`
   gap: 15px;
 
   width: 100%;
-
-  background: #999;
-  border: 2px solid #333;
 `;
 
 export const HeadStyled = styled.div`
@@ -17,4 +14,8 @@ export const HeadStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+
+  width: 335px;
+  height: 100px;
+  padding: 20px 0;
 `;

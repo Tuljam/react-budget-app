@@ -1,6 +1,9 @@
 import { createContext, useContext, useState } from "react";
-import { IExpense } from "../../types/types";
-import { IExpenseContext, IExpensesContextProviderProps } from "./types";
+import {
+  IExpense,
+  IExpenseContext,
+  IExpensesContextProviderProps,
+} from "../../types/types";
 
 export const ExpensesContext = createContext<IExpenseContext>(
   {} as IExpenseContext
@@ -12,7 +15,7 @@ export const useExpensesContextValue = () => {
       expenses: [
         // {
         //   id: "",
-        //   title: "",
+        //   name: "",
         //   price: 0,
         // },
       ],

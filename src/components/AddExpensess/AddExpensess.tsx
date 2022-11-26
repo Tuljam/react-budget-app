@@ -1,5 +1,3 @@
-import { FormEvent } from "react";
-import { Input } from "../Input/Input";
 import { Submit } from "../Submit/Submit";
 import { Title } from "../Title/Title";
 import { StyledForm, StyledInputForm } from "./styles";
@@ -9,7 +7,7 @@ import { v4 } from "uuid";
 import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
 
 interface IFormData {
-  title: string;
+  name: string;
   price: number;
 }
 export const AddExpensess = () => {
@@ -21,9 +19,9 @@ export const AddExpensess = () => {
   } = useForm<IFormData>();
   const { setNewExpense } = useExpensesContext();
   const { budget, setRemaining, setSpending } = useBudgetContext();
-  const onSubmit: SubmitHandler<IFormData> = ({ title, price }) => {
+  const onSubmit: SubmitHandler<IFormData> = ({ name, price }) => {
     if (budget > 0) {
-      setNewExpense({ title, price, id: v4() });
+      setNewExpense({ name, price, id: v4() });
       setSpending(+price);
       setRemaining();
       reset();
@@ -37,13 +35,13 @@ export const AddExpensess = () => {
       <StyledInputForm
         type="text"
         placeholder="enter name ..."
-        {...register("title", {
+        {...register("name", {
           required: "name is required",
           maxLength: { value: 10, message: "Maximum 20 letters" },
         })}
       />
       <span className="form-field__error">
-        {errors.title && errors.title.message}
+        {errors.name && errors.name.message}
       </span>
       <StyledInputForm
         type="text"

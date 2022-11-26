@@ -1,18 +1,6 @@
 import { createContext, ReactNode, useContext, useState } from "react";
-import { Currency } from "../../ui/currency";
+import { IBudgetContext, IBudgetContextProviderProps } from "../../types/types";
 
-interface IBudgetContextProviderProps {
-  children: ReactNode;
-}
-
-interface IBudgetContext {
-  budget: number;
-  remaining: number;
-  spending: number;
-  setRemaining: () => void;
-  setSpending: (newSpending: number) => void;
-  setNewBudget: (newBudget: number) => void;
-}
 export const BudgetContext = createContext<IBudgetContext>(
   {} as IBudgetContext
 );

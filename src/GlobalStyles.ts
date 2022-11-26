@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
   align-items: center;
 }
  body {
+  background-color: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
 }
 h1,

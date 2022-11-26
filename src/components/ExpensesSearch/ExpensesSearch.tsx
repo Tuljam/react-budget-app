@@ -1,8 +1,7 @@
-import { useEffect } from "react";
 import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
 import { useDebounce } from "../../hooks/useDebounce";
 import { useInput } from "../../hooks/useInput";
-import { IExpense } from "../../types/types";
+import { ExpensesSearchStyled } from "./styles";
 
 // export const ExpensesSearch = () => {
 //   const {} = useExpensesContext();
@@ -15,5 +14,7 @@ import { IExpense } from "../../types/types";
 // };
 
 export const ExpensesSearch = () => {
-  return <input />;
+  const {} = useExpensesContext();
+  const search = useInput();
+  return <ExpensesSearchStyled type="search" placeholder="search ..." />;
 };

@@ -9,10 +9,6 @@ export const BudgetCardStyled = styled.div`
   height: 100px;
   padding: 20px;
 
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-
   background: #6495ed;
   border: none;
   border-radius: 10px;
@@ -29,4 +25,18 @@ export const SubTitleStyled = styled.p`
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+`;
+
+export const InputStyled = styled.input`
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus-visible {
+    outline: none;
+  }
 `;
