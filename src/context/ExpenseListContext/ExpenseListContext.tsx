@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import { IExpense } from "../../types/types";
 import { IExpenseContext, IExpensesContextProviderProps } from "./types";
 
 export const ExpensesContext = createContext<IExpenseContext>(
@@ -9,19 +10,19 @@ export const useExpensesContextValue = () => {
   const [expensesContext, setExpensesContext] = useState<IExpenseContext>(
     () => ({
       expenses: [
-        {
-          id: "23abc",
-          title: "Lopata",
-          price: 100,
-        },
+        // {
+        //   id: "",
+        //   title: "",
+        //   price: 0,
+        // },
       ],
-      setNewExpense: (newExpense) => {
+      setNewExpense: (newExpense: IExpense) => {
         setExpensesContext((ctx) => ({
           ...ctx,
           expenses: [...ctx.expenses, newExpense],
         }));
       },
-      deleteExpense: (id: string) => {
+      deleteExpense: (id) => {
         setExpensesContext((ctx) => ({
           ...ctx,
           expenses: ctx.expenses.filter((exp) => exp.id! === id),
