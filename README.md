@@ -1,9 +1,17 @@
-Tools and packages:
-Typescript
-React
-Context API
-Styled components
-react-hook-form
-gh-pages
+# React Budget App
 
-Your site is live at https://tuljam.github.io/react-budget-app/
+[Watch me!](https://tuljam.github.io/react-budget-app/)
+
+## Project Description
+
+This app helps to manage your budget, calculate expenses and track purchases.
+
+### Packages and tools
+
+React
+Typescript
+styled-components
+gh-pages
+react-select
+uuid
+react-hook-form
