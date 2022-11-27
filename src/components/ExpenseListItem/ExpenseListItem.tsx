@@ -21,7 +21,7 @@ export const ExpensesListItem = ({ name, price, id }: IProps) => {
 
   const handleDeleteButton = () => {
     deleteExpense(id);
-    returnRemaining();
+    returnRemaining(+price);
     returnSpending(price);
   };
 
