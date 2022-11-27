@@ -15,7 +15,7 @@ export const AddExpensess = () => {
     formState: { errors },
   } = useForm<IFormData>();
   const { setNewExpense } = useExpensesContext();
-  const { budget, setRemaining, setSpending } = useBudgetContext();
+  const { setRemaining, setSpending, budget } = useBudgetContext();
   const onSubmit: SubmitHandler<IFormData> = ({ name, price }) => {
     if (budget > 0) {
       setNewExpense({ name, price, id: v4() });

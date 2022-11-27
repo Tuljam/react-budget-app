@@ -24,6 +24,7 @@ export const ExpensesListItem = ({ name, price, id }: IProps) => {
     returnRemaining();
     returnSpending(price);
   };
+
   return (
     <ExpenseListItemStyled>
       <TextStyled>{name}</TextStyled>

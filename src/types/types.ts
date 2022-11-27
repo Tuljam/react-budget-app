@@ -26,9 +26,9 @@ export interface IBudgetContext {
   remaining: number;
   spending: number;
   setRemaining: () => void;
+  returnRemaining: () => void;
   setSpending: (newSpending: number) => void;
   setNewBudget: (newBudget: number) => void;
-  returnRemaining: () => void;
   returnSpending: (value: number) => void;
 }
 

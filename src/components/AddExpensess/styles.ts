@@ -13,7 +13,6 @@ export const StyledForm = styled.form`
   }
 `;
 export const StyledInputForm = styled.input`
-  /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); */
   border-radius: 10px;
   border: none;
   padding: 20px 15px;

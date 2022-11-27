@@ -34,10 +34,10 @@ export const useBudgetContextValue = () => {
         spending: ctx.spending + newSpending,
       }));
     },
-    returnSpending: (newSpending) => {
+    returnSpending: (value) => {
       setBudgetContext((ctx) => ({
         ...ctx,
-        spending: ctx.spending - newSpending,
+        spending: ctx.spending - value,
       }));
     },
   }));
