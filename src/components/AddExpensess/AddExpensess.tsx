@@ -5,11 +5,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
 import { v4 } from "uuid";
 import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
+import { IFormData } from "../../types/types";
 
-interface IFormData {
-  name: string;
-  price: number;
-}
 export const AddExpensess = () => {
   const {
     register,

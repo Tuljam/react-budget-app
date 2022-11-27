@@ -6,7 +6,7 @@ export const ExpenseListItemStyled = styled.li`
   grid-template-rows: 20px;
   padding: 15px 20px;
   align-items: center;
-  border-bottom: 2px solid #ccd5ff;
+  border-bottom: 3px solid #ccd5ff;
   @media (max-width: 390px) {
     font-size: 12px;
     padding: 12px 15px;

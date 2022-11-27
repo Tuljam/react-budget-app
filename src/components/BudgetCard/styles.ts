@@ -6,19 +6,11 @@ export const BudgetCardStyled = styled.div`
   flex-direction: row;
 
   width: 335px;
-  height: 100px;
   padding: 20px;
 
   background: #6495ed;
   border: none;
   border-radius: 10px;
-
-  .budget__button {
-    width: 85px;
-    height: 36px;
-    border-radius: 15px;
-    border: none;
-  }
 `;
 export const SubTitleStyled = styled.p`
   font-family: Arial, Helvetica, sans-serif;
@@ -29,11 +21,12 @@ export const SubTitleStyled = styled.p`
 
 export const ButtonStyled = styled.button`
   width: 85px;
-  height: 36px;
+  padding: 10px;
   border-radius: 15px;
   border: none;
 `;
 export const InputStyled = styled.input`
+  width: 50%;
   border: none;
   background-color: transparent;
   color: black;

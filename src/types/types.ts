@@ -14,7 +14,6 @@ export interface IExpenseContext {
   expenses: IExpense[];
   setNewExpense: (expense: IExpense) => void;
   deleteExpense: (id: string) => void;
-  // searchValue: (name: string) => void;
   searchValue: string;
   searchExpense: (name: string) => void;
 }
@@ -29,4 +28,15 @@ export interface IBudgetContext {
   setRemaining: () => void;
   setSpending: (newSpending: number) => void;
   setNewBudget: (newBudget: number) => void;
+  returnRemaining: () => void;
+  returnSpending: (value: number) => void;
+}
+
+export interface IFormData {
+  name: string;
+  price: number;
+}
+export interface IFormData {
+  name: string;
+  price: number;
 }

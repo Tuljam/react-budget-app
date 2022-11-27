@@ -10,7 +10,7 @@ export const RemainingCardStyled = styled.div`
   flex-direction: row;
 
   width: 335px;
-  height: 100px;
+  /* height: 100px; */
   padding: 20px;
 
   font-weight: 500;
@@ -20,7 +20,6 @@ export const RemainingCardStyled = styled.div`
   background-color: ${(props: IProps) =>
     props.danger ? "#FF0E27" : "#9E2DFC"};
   color: ${(props: IProps) => (props.danger ? "#FFF" : "black")};
-  /* background: #b4c3de; */
   border: none;
   border-radius: 10px;
 `;

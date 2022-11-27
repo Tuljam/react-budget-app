@@ -1,3 +1,4 @@
+import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
 import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
 import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
 import {
@@ -14,10 +15,14 @@ interface IProps {
 }
 
 export const ExpensesListItem = ({ name, price, id }: IProps) => {
+  const { returnRemaining, returnSpending } = useBudgetContext();
   const { currentCurrency } = useCurrencyContext();
   const { deleteExpense } = useExpensesContext();
+
   const handleDeleteButton = () => {
     deleteExpense(id);
+    returnRemaining();
+    returnSpending(price);
   };
   return (
     <ExpenseListItemStyled>
@@ -26,7 +31,6 @@ export const ExpensesListItem = ({ name, price, id }: IProps) => {
         {currentCurrency.value}
         {price}
       </BadgeStyled>
-
       <ExpensesDeleteButtonStyled onClick={handleDeleteButton}>
         X
       </ExpensesDeleteButtonStyled>

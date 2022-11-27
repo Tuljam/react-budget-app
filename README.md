@@ -1,4 +1,4 @@
-Tools and packages
+Tools and packages:
 Typescript
 React
 Context API

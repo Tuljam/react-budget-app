@@ -28,7 +28,7 @@ export const useExpensesContextValue = () => {
       deleteExpense: (id) => {
         setExpensesContext((ctx) => ({
           ...ctx,
-          expenses: ctx.expenses.filter((exp) => exp.id! === id),
+          expenses: ctx.expenses.filter((exp) => exp.id! == id),
         }));
       },
       searchValue: "",

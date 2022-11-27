@@ -29,10 +29,7 @@ export const BudgetCard = () => {
       {isEditMode ? (
         <>
           <InputStyled type="text" {...inputValue} />
-          <button className="budget__button" onClick={handleSave}>
-            {" "}
-            Save
-          </button>
+          <ButtonStyled onClick={handleSave}> Save</ButtonStyled>
         </>
       ) : (
         <>
