@@ -14,7 +14,8 @@ export interface IExpenseContext {
   expenses: IExpense[];
   setNewExpense: (expense: IExpense) => void;
   deleteExpense: (id: string) => void;
-  //searchValue: (name: string) => void;
+  // searchValue: (name: string) => void;
+  searchValue: string;
   searchExpense: (name: string) => void;
 }
 export interface IBudgetContextProviderProps {

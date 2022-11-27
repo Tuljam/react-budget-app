@@ -2,7 +2,12 @@ import { useState } from "react";
 import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
 import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
 import { useInput } from "../../hooks/useInput";
-import { BudgetCardStyled, InputStyled, SubTitleStyled } from "./styles";
+import {
+  BudgetCardStyled,
+  ButtonStyled,
+  InputStyled,
+  SubTitleStyled,
+} from "./styles";
 
 export const BudgetCard = () => {
   const inputValue = useInput();
@@ -36,10 +41,7 @@ export const BudgetCard = () => {
             Budget {currentCurrency.value}:{budget}
           </SubTitleStyled>
 
-          <button className="budget__button" onClick={handleEdit}>
-            {" "}
-            Edit
-          </button>
+          <ButtonStyled onClick={handleEdit}> Edit</ButtonStyled>
         </>
       )}
     </BudgetCardStyled>

@@ -27,6 +27,12 @@ export const SubTitleStyled = styled.p`
   line-height: 24px;
 `;
 
+export const ButtonStyled = styled.button`
+  width: 85px;
+  height: 36px;
+  border-radius: 15px;
+  border: none;
+`;
 export const InputStyled = styled.input`
   border: none;
   background-color: transparent;
