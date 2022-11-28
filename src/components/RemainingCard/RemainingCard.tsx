@@ -15,7 +15,8 @@ export const RemainingCard = () => {
   }
   return (
     <RemainingCardStyled>
-      Remaining {currentCurrency.value}:{remaining}{" "}
+      Remaining: {currentCurrency.value}
+      {remaining}{" "}
     </RemainingCardStyled>
   );
 };

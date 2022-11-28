@@ -10,7 +10,6 @@ export const RemainingCardStyled = styled.div`
   flex-direction: row;
 
   width: 335px;
-  /* height: 100px; */
   padding: 20px;
 
   font-weight: 500;

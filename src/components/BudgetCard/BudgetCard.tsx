@@ -28,14 +28,19 @@ export const BudgetCard = () => {
     <BudgetCardStyled>
       {isEditMode ? (
         <>
-          <InputStyled type="text" {...inputValue} />
+          <InputStyled
+            placeholder="Enter budget..."
+            type="number"
+            {...inputValue}
+          />
           <ButtonStyled onClick={handleSave}> Save</ButtonStyled>
         </>
       ) : (
         <>
           <SubTitleStyled>
             {" "}
-            Budget {currentCurrency.value}:{budget}
+            Budget: {currentCurrency.value}
+            {budget}
           </SubTitleStyled>
 
           <ButtonStyled onClick={handleEdit}> Edit</ButtonStyled>

@@ -11,6 +11,8 @@ export const BudgetCardStyled = styled.div`
   background: #6495ed;
   border: none;
   border-radius: 10px;
+
+  cursor: pointer;
 `;
 export const SubTitleStyled = styled.p`
   font-family: Arial, Helvetica, sans-serif;
@@ -24,6 +26,7 @@ export const ButtonStyled = styled.button`
   padding: 10px;
   border-radius: 15px;
   border: none;
+  cursor: pointer;
 `;
 export const InputStyled = styled.input`
   width: 50%;
@@ -32,6 +35,7 @@ export const InputStyled = styled.input`
   color: black;
   font-weight: 500;
   font-size: 20px;
+  cursor: pointer;
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
