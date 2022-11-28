@@ -14,19 +14,21 @@ export const ExpenseListItemStyled = styled.li`
 `;
 export const BadgeStyled = styled.span`
   justify-self: center;
-  background-color: blue;
+  background-color: #23c9ff;
   border-radius: 10px;
   padding: 3px 10px;
   font-size: 12px;
   color: #fff;
 `;
 
-export const ExpensesDeleteButtonStyled = styled.button`
+export const ExpensesDeleteButtonStyled = styled.span`
   justify-self: center;
-  width: 15px;
-  margin-left: 5px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: 15px;
   font-size: 12px;
-  color: red;
+
   cursor: pointer;
 `;
 

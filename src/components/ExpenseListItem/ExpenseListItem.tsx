@@ -7,6 +7,7 @@ import {
   ExpensesDeleteButtonStyled,
   TextStyled,
 } from "./styles";
+import { ReactComponent as DeleteButton } from "../../assets/icon/x.svg";
 
 interface IProps {
   name: string;
@@ -33,7 +34,8 @@ export const ExpensesListItem = ({ name, price, id }: IProps) => {
         {price}
       </BadgeStyled>
       <ExpensesDeleteButtonStyled onClick={handleDeleteButton}>
-        X
+        {" "}
+        <DeleteButton />
       </ExpensesDeleteButtonStyled>
     </ExpenseListItemStyled>
   );

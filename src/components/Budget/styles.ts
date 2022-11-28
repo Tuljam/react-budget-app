@@ -5,7 +5,6 @@ export const BudgetStyled = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 15px;
-
   width: 100%;
 `;
 
