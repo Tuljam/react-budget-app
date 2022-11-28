@@ -8,38 +8,19 @@ export const RemainingCard = () => {
   const { budget } = useBudgetContext();
   const { expenses } = useExpensesContext();
 
-  const remaning =
+  const remaningSumm =
     budget - expenses.reduce((total, { price }) => total + price, 0);
 
-  const isOverspending = remaning < 0;
+  const isOverspending = remaningSumm < 0;
 
   return (
     <RemainingCardStyled $isOverBudget={isOverspending}>
       <SubTitle $isOverBudget={isOverspending}>
         {isOverspending
-          ? `Overspending by ${currentCurrency.value} ${Math.abs(remaning)}`
-          : `Remaining:${currentCurrency.value} $
-        {remaning}`}
+          ? `Overspending by ${currentCurrency.value} ${Math.abs(remaningSumm)}`
+          : `Remaining:${currentCurrency.value} 
+        ${remaningSumm}`}
       </SubTitle>
     </RemainingCardStyled>
   );
 };
-
-// export const RemainingCard = () => {
-//   const { currentCurrency } = useCurrencyContext();
-//   const { remaining } = useBudgetContext();
-//   if (remaining < 0) {
-//     return (
-//       <RemainingCardStyled danger>
-//         Overspending by {currentCurrency.value}
-//         {Math.abs(remaining)}
-//       </RemainingCardStyled>
-//     );
-//   }
-//   return (
-//     <RemainingCardStyled>
-//       Remaining: {currentCurrency.value}
-//       {remaining}{" "}
-//     </RemainingCardStyled>
-//   );
-// };
