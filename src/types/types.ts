@@ -23,13 +23,7 @@ export interface IBudgetContextProviderProps {
 
 export interface IBudgetContext {
   budget: number;
-  //remaining: number;
-  //spending: number;
-  //setRemaining: () => void;
-  // returnRemaining: (value: number) => void;
-  //setSpending: (newSpending: number) => void;
   setNewBudget: (newBudget: number) => void;
-  // returnSpending: (value: number) => void;
 }
 
 export interface IFormData {

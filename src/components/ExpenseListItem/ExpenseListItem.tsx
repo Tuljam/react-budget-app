@@ -16,14 +16,11 @@ interface IProps {
 }
 
 export const ExpensesListItem = ({ name, price, id }: IProps) => {
-  const { returnRemaining, returnSpending } = useBudgetContext();
   const { currentCurrency } = useCurrencyContext();
   const { deleteExpense } = useExpensesContext();
 
   const handleDeleteButton = () => {
     deleteExpense(id);
-    returnRemaining(+price);
-    returnSpending(price);
   };
 
   return (
