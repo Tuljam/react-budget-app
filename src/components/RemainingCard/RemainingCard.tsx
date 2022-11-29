@@ -9,7 +9,7 @@ export const RemainingCard = () => {
   const { expenses } = useExpensesContext();
 
   const remaningSumm =
-    budget - expenses.reduce((total, { price }) => total + price, 0);
+    budget - expenses.reduce((total, { price }) => total + +price, 0);
 
   const isOverspending = remaningSumm < 0;
 
