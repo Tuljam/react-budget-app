@@ -1,19 +1,15 @@
 import { useEffect, useState } from "react";
 import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
 import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
+import { IExpense } from "../../types/types";
 import { ExpensesListItem } from "../ExpenseListItem/ExpenseListItem";
 import { EmptyListStyled, ExpenseListStyled } from "./styles";
 
-export const ExpenseList = () => {
-  const { expenses, searchValue } = useExpensesContext();
+interface IProps {
+  searchExpenses: IExpense[];
+}
 
-  const [searchExpenses, setSearchExpenses] = useState(expenses);
-
-  useEffect(() => {
-    setSearchExpenses(
-      expenses.filter((exp) => exp.name.toLowerCase().includes(searchValue))
-    );
-  }, [searchValue, expenses]);
+export const ExpenseList = ({ searchExpenses }: IProps) => {
   if (!searchExpenses.length) {
     return <EmptyListStyled>Oooops! 🙈</EmptyListStyled>;
   }

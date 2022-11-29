@@ -9,6 +9,4 @@ export interface IExpenseContext {
   expenses: IExpense[];
   setNewExpense: (expense: IExpense) => void;
   deleteExpense: (id: string) => void;
-  searchValue: string;
-  searchExpense: (name: string) => void;
 }

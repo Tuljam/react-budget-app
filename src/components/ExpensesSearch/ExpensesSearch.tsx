@@ -1,17 +1,17 @@
-import { useEffect } from "react";
-import { useExpensesContext } from "../../context/ExpenseListContext/ExpenseListContext";
-import { useDebounce } from "../../hooks/useDebounce";
-import { useInput } from "../../hooks/useInput";
+import { ChangeEvent } from "react";
 import { ExpensesSearchStyled } from "./styles";
 
-export const ExpensesSearch = () => {
-  const { searchExpense } = useExpensesContext();
-  const search = useInput();
-  const debounceValue = useDebounce<string>(search.value, 700);
-  useEffect(() => {
-    searchExpense(debounceValue);
-  }, [debounceValue, searchExpense]);
+interface IProps {
+  value: string;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+}
+export const ExpensesSearch = ({ value, onChange }: IProps) => {
   return (
-    <ExpensesSearchStyled placeholder="search ..." type="search" {...search} />
+    <ExpensesSearchStyled
+      placeholder="search ..."
+      type="search"
+      value={value}
+      onChange={onChange}
+    />
   );
 };
