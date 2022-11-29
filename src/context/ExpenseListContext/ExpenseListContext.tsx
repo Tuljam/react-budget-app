@@ -1,9 +1,6 @@
 import { createContext, useContext, useState } from "react";
-import {
-  IExpense,
-  IExpenseContext,
-  IExpensesContextProviderProps,
-} from "../../types/types";
+import { IExpense } from "../../types/types";
+import { IExpenseContext, IExpensesContextProviderProps } from "./types";
 
 export const ExpensesContext = createContext<IExpenseContext>(
   {} as IExpenseContext
