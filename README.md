@@ -1,6 +1,6 @@
 # React Budget App
 
-[Watch me!](https://tuljam.github.io/react-budget-app/)
+[Watch me!](https://github.com/Tuljam/react-budget-app/tree/gh-pages)
 
 ## Project Description
 
